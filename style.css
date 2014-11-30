@@ -1,5 +1,5 @@
-/* Add icon for submenu labels */
-.submenu--label:after {
+/* Add icon for dropdown labels */
+.dropdown-menu--label:after {
   content: " ￬";
 }
 
