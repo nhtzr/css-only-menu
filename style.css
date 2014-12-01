@@ -3,7 +3,6 @@
   content: " ￬";
 }
 
-/* Strip the ul of padding and list styling */
 .menu-list {
   list-style-type:none;
   margin:0;
@@ -37,7 +36,7 @@
 }
 
 /*Style for dropdown links*/
-.menu-list--item:hover ul a {
+.menu-list--item:hover .menu-list a {
   background: #f3f3f3;
   color: #2f3036;
   height: 40px;
@@ -45,7 +44,7 @@
 }
 
 /*Hover state for dropdown links*/
-.menu-list--item:hover ul a:hover {
+.menu-list--item:hover .menu-list a:hover {
   background: #19c589;
   color: #fff;
 }
@@ -69,7 +68,7 @@
 }
 
 /*Display the dropdown on hover*/
-ul .menu-list--item a:hover + .menu-list__submenu, .menu-list__submenu:hover {
+.menu-list .menu-list--item .dropdown-menu--label:hover + .menu-list__submenu, .menu-list__submenu:hover {
   display: block;
 }
 
@@ -112,7 +111,7 @@ ul .menu-list--item a:hover + .menu-list__submenu, .menu-list__submenu:hover {
     margin-bottom: 1px;
   }
   /*Make all menu links full width*/
-  ul .menu-list--item, .menu-list--item a {
+  .menu-list .menu-list--item, .menu-list--item a {
     width: 100%;
   }
 
